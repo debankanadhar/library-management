@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: "poppins",sans-serif;
+}
+
+section{
+    padding: 50px 10%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    padding: 18px 100px;
+}
+
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: red;
+}
+
+nav .mainMenu li a:hover{
+    color: black;
+}
+
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: red;
+}
+
+nav .openMenu:hover{
+    color: black;
+}
+
+nav .mainMenu .closeMenu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: red;
+}
+
+nav .mainMenu .closeMenu:hover{
+    color: black;
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: red;
+}
+.logo span{
+    color: black;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh; 
+    background-image: url(bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    opacity: 75%;
+}
+
+.account-form{
+    position: fixed;
+    top: 0;
+    right: -105%;
+    width: 35rem;
+    background-color: rgba(54, 49, 49, 0.886);
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    justify-content: center;
+    height: 100%;
+    z-index: 1200;
+    padding: 2rem;
+    text-align: center;
+}
+
+.account-form.active{
+    right: 0;
+    box-shadow: 0 0 0 100vw rgba(0,0,0,0.8);
+}
+
+.account-form #close-form{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: darkgrey;
+}
+
+.account-form #close-form:hover{
+    transform: rotate(90deg);
+    color: #E2BFB3;
+}
+
+.account-form .button .btn{
+    margin: 0 .5rem;
+}
+
+.account-form .button .btn:hover{
+    color: #E2BFB3;
+}
+
+.account-form .button .btn.active{
+    color: black;
+}
+
+.account-form .button .btn.active:hover{
+    color: #E2BFB3;
+}
+
+.account-form form{
+    border: 0.1rem solid black;
+    padding: 2rem;
+    display: none;
+}
+
+.account-form form.active{
+    display: block;
+    color: #E2BFB3;
+}
+
+.account-form form h3{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: red;
+    padding-bottom: .5rem;
+}
+
+.account-form form .box{
+    width: 100%;
+    background-color: transparent;
+    border-color: black;
+    border:0.1rem solid;
+    color: black;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    margin: .7rem 0;
+}
+
+.account-form form .flex{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+input.btn{
+    padding: 9px 19px ;
+    height: 44px;
+    line-height: 1rem;
+    cursor: pointer;
+}
+
+input.btn:hover{
+    color: red;
+    background-color: #E2BFB3;
+}
+
+.account-form form .flex label{
+    font-size: 1rem;
+    color: red;
+    cursor: pointer;
+}
+
+.account-form form .flex a{
+    font-size: 1rem;
+    color: red;
+    margin-left: auto;
+}
+
+.account-form form .flex a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.account-form form .btn{
+    width: 100%;
+}
+
+#account-btn{
+    cursor: pointer;
+    color: red;
+}
+
+#account-btn:hover{
+    color: black;
+}
